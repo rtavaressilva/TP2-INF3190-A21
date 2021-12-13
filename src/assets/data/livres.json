@@ -1,0 +1,52 @@
+[
+    {
+        "cpr": 3594543,
+        "aut": "Jory John et Pete Oswald",
+        "tit": "L'oeuf modèle",
+        "pri": "10,00 $",
+        "rab": 0,
+        "des": "Description : L’œuf modèle, celui qui aide ses amis et ne veut jamais se disputer, décide qu’il ne peut pas être le seul bon élément d’une boîte remplie d’œufs avariés. Il commence alors un voyage vers la découverte de lui-même…",
+        "nis": "Maternelle - 2e année",
+        "img": "../images/catalogue/L'oeuf modèle.jpeg"
+    },
+    {
+        "cpr": 564274,
+        "aut": "Malcolm Mitchell",
+        "tit": "Mon livre préféré dans tout l'univers",
+        "pri": "12,99 $",
+        "rab": 10,
+        "des": "Henley n’aime pas tellement lire. Que fera-t-il lorsqu’il devra partager son livre préféré devant la classe?",
+        "nis": "Maternelle - 2e année",
+        "img": "../images/catalogue/Mon livre préféré dans tout l'univers.jpeg"
+    },
+    {
+        "cpr": 465464564,
+        "aut": "Gris Grimly",
+        "tit": "10 citrouilles effrayantes",
+        "pri": "11,99 $",
+        "rab": 0,
+        "des": "Description : Comptez 10 citrouilles effrayantes pour l’Halloween!",
+        "nis": "Maternelle - 2e année",
+        "img": "../images/catalogue/10 citrouilles effrayantes.jpeg"
+    },
+    {
+        "cpr": 3594274,
+        "aut": "Peter H. Reynolds",
+        "tit": "Le point de départ",
+        "pri": "17,99 $",
+        "rab": 0,
+        "des": "Description : Il suffit d'une seule marque! Parfait pour les élèves d'immersion française.",
+        "nis": "Maternelle - 2e année",
+        "img": "../images/catalogue/le_point_départ.jpeg"
+    },
+    {
+        "cpr": 3588970,
+        "aut": "Elise Gravel",
+        "tit": "Arlo et Pips : Le roi des oiseaux",
+        "pri": "14,99 $",
+        "rab": 13,
+        "des": "Description : Arlo le corbeau essaie de prouver qu’il est le meilleur oiseau du monde. A-t-il raison?",
+        "nis": "Maternelle - 2e année",
+        "img": "../images/catalogue/Arlo_et_pips_le_roi_des_oiseaux.jpeg"
+    }
+]

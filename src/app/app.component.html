@@ -1,0 +1,67 @@
+<!-- Barre de navigation -->
+<div>
+  <nav
+    id="navbar"
+    class="navbar navbar-expand-md bg-dark navbar-dark fixed-top"
+  >
+    <div class="container-fluid">
+      <a href="/index.html" class="navbar-brand">Librairie Librement</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ms-auto nav-tabs">
+          <li class="nav-item">
+            <a href="/index.html" class="nav-link">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a href="/leclub.html" class="nav-link">Le Club</a>
+          </li>
+          <li class="nav-item">
+            <a href="/contacts.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="/connexion.html" class="nav-link">Se connecter</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<router-outlet>
+  <app-accueil></app-accueil>
+  <app-admin></app-admin>
+  <app-ecoles></app-ecoles>
+  <app-panier></app-panier>
+  <app-search></app-search>
+  <app-signup></app-signup>
+</router-outlet>
+
+<!-- Pied de page -->
+<footer
+  id="footer"
+  class="p-2 bg-dark text-white text-center position-relative"
+>
+  <div class="container">
+    <p class="lead">
+      Site développé dans le cadre du TP1 du cours
+      <a href="http://www.etudier.uqam.ca/cours?sigle=INF3190">INF3190 </a> -
+      <a href="http://www.uqam.ca" target="_blank">UQAM</a>
+      <br />
+      Auteur :
+      <a
+        href="git@gitlab.info.uqam.ca:tavares_silva.rafael/inf3190-a21-tp.git"
+        target="_blank"
+        >Rafael Tavares Silva - TAVR02048309</a
+      >
+    </p>
+  </div>
+</footer>

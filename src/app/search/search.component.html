@@ -1,0 +1,25 @@
+<div>
+  <ul>
+    <li *ngFor="let livr of livres">
+      Code de produit: {{ livr.cpr }}, Auteur: {{ livr.aut }}, Titre:
+      {{ livr.tit }}, Prix: {{ livr.pri }}, Rabais: {{ livr.rab }}, Ajouter au
+      panier
+    </li>
+  </ul>
+</div>
+<!--! https://material.angular.io/components/table/overview -->
+<table mat-table [listLivres]="livres">
+<ng-cont matColumnDef="Code produit">
+    <th mat-header-cell *matHeaderCellDef>Code produit</th>
+    <td mat-cell *matCellDe="let livres"> {{ livres.cpr }} </td>
+</ng-container>
+</table>
+<!-- <div></div> -->
+<!-- "cpr": 3594543,
+        "aut": "Jory John et Pete Oswald",
+        "tit": "L'oeuf modèle",
+        "pri": "10,00 $",
+        "rab": 0,
+        "des": "Description : L’œuf modèle, celui qui aide ses amis et ne veut jamais se disputer, décide qu’il ne peut pas être le seul bon élément d’une boîte remplie d’œufs avariés. Il commence alors un voyage vers la découverte de lui-même…",
+        "nis": "Maternelle - 2e année",
+        "img": "../images/catalogue/L'oeuf modèle.jpeg" -->
