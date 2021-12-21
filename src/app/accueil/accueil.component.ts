@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as listeLivres from '../../assets/data/livres.json';//!TBC
+import * as listeLivres from '../../assets/data/livres.json';
 
 @Component({
   selector: 'app-accueil',
@@ -8,7 +8,18 @@ import * as listeLivres from '../../assets/data/livres.json';//!TBC
 })
 export class AccueilComponent implements OnInit {
 
-  livres:any = (listeLivres as any).default; //!TBC
+  livres: any = (listeLivres as any).default;
+  livreEnrabais: boolean = false;
+
+
+  afficherLivreEnRabais() {    
+    if(this.livres.rab > 0) {
+      this.livreEnrabais = true;
+      console.log(this.livres);    
+    } 
+    return this.livreEnrabais;
+  }
+  
   constructor() { }
 
   ngOnInit(): void {

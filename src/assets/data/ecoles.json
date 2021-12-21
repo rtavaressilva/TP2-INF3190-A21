@@ -1,5 +1,22 @@
 [
     {
-        "école": " "
+        "ecole": "Académie de Roberval",
+        "code": 13564
+    },
+    {
+        "ecole": "Académie Dunton",
+        "code": 49874
+    },
+    {
+        "ecole": "Centre Gabrielle-Roy",
+        "code": 14855
+    },
+    {
+        "ecole": "École Alice-Parizeau",
+        "code": 78974
+    },
+    {
+        "ecole": "École des Nations",
+        "code": 45612
     }
 ]

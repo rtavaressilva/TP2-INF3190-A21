@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as listeLivres from '../../assets/data/livres.json';
 
 @Component({
   selector: 'app-panier',
@@ -8,8 +9,12 @@ import { Component, OnInit } from '@angular/core';
 export class PanierComponent implements OnInit {
 
   constructor() { }
-
   ngOnInit(): void {
   }
+  livres:any = (listeLivres as any).default;
+  // livresDansPanier:any = [this.livres[0]];
+  
 
+  
+  
 }

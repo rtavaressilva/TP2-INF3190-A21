@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-//! import { FormControl } from '@angular/forms';
 import { BdService } from './bd.service';
-
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -10,11 +9,13 @@ import { BdService } from './bd.service';
 })
 export class AppComponent {
   title = 'clec-app';
+  constructor(private bd: BdService, private http: HttpClient) {
   
-  
- 
-  constructor(private bd: BdService) {
-  
- }
-  
+  }
+
+  ngOnInit() {
+    
+  }
+
+
 }

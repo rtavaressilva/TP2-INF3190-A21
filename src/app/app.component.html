@@ -1,49 +1,150 @@
 <!-- Barre de navigation -->
-<div>
-  <nav
-    id="navbar"
-    class="navbar navbar-expand-md bg-dark navbar-dark fixed-top"
-  >
-    <div class="container-fluid">
-      <a href="/index.html" class="navbar-brand">Librairie Librement</a>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapsibleNavbar"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<nav
+  id="navbar"
+  class="navbar navbar-expand-md bg-dark navbar-dark fixed-top p-1"
+>
+  <div class="container-fluid">
+    <a routerLink="app-accueil" class="navbar-brand">Club de Lecture</a>
 
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav ms-auto nav-tabs">
-          <li class="nav-item">
-            <a href="/index.html" class="nav-link">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a href="/leclub.html" class="nav-link">Le Club</a>
-          </li>
-          <li class="nav-item">
-            <a href="/contacts.html" class="nav-link">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a href="/connexion.html" class="nav-link">Se connecter</a>
-          </li>
-        </ul>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapsibleNavbar"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ms-auto nav-tabs">
+        <li class="nav-item">
+          <a routerLink="app-accueil" class="nav-link">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="app-admin" class="nav-link">Admin</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="app-ecoles" class="nav-link">Écoles</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="app-signup" class="nav-link">S'inscrire</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="app-search" class="nav-link">Recherche</a>
+        </li>
+        <li class="nav-item">
+          <button
+            id="panier"
+            type="button"
+            class="btn btn-outline-primary btn-md"
+          >
+            <a routerLink="app-panier" class="nav-link">Panier</a>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br />
+<br />
+<br />
+<br />
+
+<router-outlet> </router-outlet>
+<app-signup></app-signup>
+
+<!-- Boites -->
+<section class="p-5">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md p-1">
+        <div class="card bg-dark text-light">
+          <div class="card-body text-center">
+            <div class="h1 mb-3">
+              <i class="bi bi-laptop"></i>
+            </div>
+            <h3 class="card-title mb-3">Accueil</h3>
+          </div>
+          <p class="card-text">Aller à l'accueil</p>
+          <a routerLink="app-accueil" class="btn btn-primary">app-accueil</a>
+        </div>
+      </div>
+
+      <div class="col-md p-1">
+        <div class="card bg-dark text-light">
+          <div class="card-body text-center">
+            <div class="h1 mb-3">
+              <i class="bi bi-laptop"></i>
+            </div>
+            <h3 class="card-title mb-3">Admin</h3>
+          </div>
+          <p class="card-text">Gestion de compte</p>
+          <a routerLink="app-admin" class="btn btn-primary"
+            >Connexion/app-admin</a
+          >
+        </div>
+      </div>
+
+      <div class="col-md p-1">
+        <div class="card bg-dark text-light">
+          <div class="card-body text-center">
+            <div class="h1 mb-3">
+              <i class="bi bi-book-half"></i>
+            </div>
+            <h3 class="card-title mb-3">S'inscrire</h3>
+          </div>
+          <p class="card-text">Creer votre compte</p>
+          <a routerLink="app-signup" class="btn btn-primary">app-signup</a>
+        </div>
+      </div>
+
+      <div class="col-md p-1">
+        <div class="card bg-dark text-light">
+          <div class="card-body text-center">
+            <div class="h1 mb-3">
+              <i class="bi bi-book-half"></i>
+            </div>
+            <h3 class="card-title mb-3">Écoles</h3>
+          </div>
+          <p class="card-text">Écoles du Club de Lecture</p>
+          <a routerLink="app-ecoles" class="btn btn-primary">app-ecoles</a>
+        </div>
+      </div>
+
+      <div class="col-md p-1">
+        <div class="card bg-dark text-light">
+          <div class="card-body text-center">
+            <div class="h1 mb-3">
+              <i class="bi bi-search"></i>
+            </div>
+            <h3 class="card-title mb-3">Recherche</h3>
+          </div>
+          <p class="card-text">Chercher notre catalogue</p>
+          <a routerLink="app-search" class="btn btn-primary"
+            >Recherche/app-search</a
+          >
+        </div>
+      </div>
+
+      <div class="col-md p-1">
+        <div class="card bg-dark text-light">
+          <div class="card-body text-center">
+            <div class="h1 mb-3">
+              <i class="bi bi-people"></i>
+            </div>
+            <h3 class="card-title mb-3">Panier d'achats</h3>
+          </div>
+          <p class="card-text">Aller au panier</p>
+          <a routerLink="app-panier" class="btn btn-primary"
+            >Page panier/app-panier</a
+          >
+        </div>
       </div>
     </div>
-  </nav>
-</div>
-
-<router-outlet>
-  <app-accueil></app-accueil>
-  <app-admin></app-admin>
-  <app-ecoles></app-ecoles>
-  <app-panier></app-panier>
-  <app-search></app-search>
-  <app-signup></app-signup>
-</router-outlet>
+  </div>
+</section>
 
 <!-- Pied de page -->
 <footer

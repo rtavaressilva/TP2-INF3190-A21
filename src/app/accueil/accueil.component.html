@@ -18,21 +18,21 @@
       <img
         class="d-block w-100"
         src="../../assets/images/catalogue/10 citrouilles effrayantes.jpeg"
-        alt="plusieurs livres"
+        alt="10 citrouilles effrayantes"
       />
     </div>
     <div class="carousel-item">
       <img
         class="d-block w-100"
-        src="../../assets/images/catalogue/L'oeuf modèle.jpeg"
-        alt="almanac21"
+        src="../../assets/images/catalogue/L'oeuf modèle.jpeg"
+        alt="L'oeuf modèle"
       />
     </div>
     <div class="carousel-item">
       <img
         class="d-block w-100"
-        src="../../assets/images/catalogue/le_point_départ.jpeg"
-        alt="fairy"
+        src="../../assets/images/catalogue/le_point_départ.jpeg"
+        alt="le_point_départ"
       />
     </div>
   </div>
@@ -58,4 +58,7 @@
 </div>
 <!-- /Carousel -->
 <hr />
-<h3>Liste des livres en rabais</h3>
+<h3>Livres en rabais!</h3>
+<ul *ngFor="let livr of livres">
+  <li *ngIf="livr.rab > 0">{{ livr.tit }} : {{ livr.rab }}% de rabais</li>
+</ul>

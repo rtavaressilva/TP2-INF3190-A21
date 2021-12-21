@@ -1,1 +1,18 @@
-<p>ecoles works!</p>
+<div class="container mt-5">
+  <h2>Liste d'écoles</h2>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>École</th>
+        <th>Code</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ecole of ecoles">
+        <td>{{ ecole.ecole }}</td>
+        <td>{{ ecole.code }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

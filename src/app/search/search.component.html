@@ -1,25 +1,38 @@
-<div>
-  <ul>
-    <li *ngFor="let livr of livres">
-      Code de produit: {{ livr.cpr }}, Auteur: {{ livr.aut }}, Titre:
-      {{ livr.tit }}, Prix: {{ livr.pri }}, Rabais: {{ livr.rab }}, Ajouter au
-      panier
-    </li>
-  </ul>
+<div class="container mt-5">
+  <h2>Catalogue de Livres</h2>
+
+  <table mat-table [dataSource]="livres" class="mat-elevation-z8">
+    <ng-container matColumnDef="cpr">
+      <th mat-header-cell *matHeaderCellDef>Code produit</th>
+      <td mat-cell *matCellDef="let livr">{{ livr.cpr }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="aut">
+      <th mat-header-cell *matHeaderCellDef>Auteur</th>
+      <td mat-cell *matCellDef="let livr">{{ livr.aut }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="tit">
+      <th mat-header-cell *matHeaderCellDef>Titre</th>
+      <td mat-cell *matCellDef="let livr">{{ livr.tit }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="pri">
+      <th mat-header-cell *matHeaderCellDef>Prix</th>
+      <td mat-cell *matCellDef="let livr">{{ livr.pri }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="rab">
+      <th mat-header-cell *matHeaderCellDef>Rabais</th>
+      <td mat-cell *matCellDef="let livr">{{ livr.rab }}%</td>
+    </ng-container>
+
+    <ng-container matColumnDef="panier">
+      <th mat-header-cell *matHeaderCellDef>Ajouter panier</th>
+      <td mat-cell *matCellDef="let livr"></td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="colones"></tr>
+    <tr mat-row *matRowDef="let row; columns: colones"></tr>
+  </table>
 </div>
-<!--! https://material.angular.io/components/table/overview -->
-<table mat-table [listLivres]="livres">
-<ng-cont matColumnDef="Code produit">
-    <th mat-header-cell *matHeaderCellDef>Code produit</th>
-    <td mat-cell *matCellDe="let livres"> {{ livres.cpr }} </td>
-</ng-container>
-</table>
-<!-- <div></div> -->
-<!-- "cpr": 3594543,
-        "aut": "Jory John et Pete Oswald",
-        "tit": "L'oeuf modèle",
-        "pri": "10,00 $",
-        "rab": 0,
-        "des": "Description : L’œuf modèle, celui qui aide ses amis et ne veut jamais se disputer, décide qu’il ne peut pas être le seul bon élément d’une boîte remplie d’œufs avariés. Il commence alors un voyage vers la découverte de lui-même…",
-        "nis": "Maternelle - 2e année",
-        "img": "../images/catalogue/L'oeuf modèle.jpeg" -->
